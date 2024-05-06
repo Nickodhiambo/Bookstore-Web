@@ -1,0 +1,22 @@
+{% extends '_base.html' %}
+
+{% block title %}Books{% endblock title %}
+
+{% block content %}
+  <form class="search-form" method="get" action="{% url 'search-results' %}">
+    <input name="q" type="text" placeholder="Search by title or author"
+    aria-label="Search">
+    <button type="submit">Search</button>
+    <a href="{% url 'add-book' %}">Upload</a>
+  </form>
+  <div class="library">
+    {% for book in book_list %}
+    <div class="card">
+      {% if book.cover %}
+        <img src="{{ book.cover.url }}" alt="{{ book.title }}">
+      {% endif %}
+      <h6><a href="{{ book.get_absolute_url }}">{{ book.title }}</a></h6>
+    </div>
+  {% endfor %}
+  </div>
+{% endblock content %}

@@ -1,0 +1,20 @@
+ <!-- add_book.html -->
+{% extends '_base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block title %}Add Book{% endblock title %}
+
+{% block content %}
+  <h2>Add Book</h2>
+    <div class="add-wrapper">  
+      <div class="add-form">  
+        <form method="post" enctype="multipart/form-data">
+          {% csrf_token %}
+          {{ form|crispy }}
+          <button type="submit">Add Book</button>
+        </form>
+      </div>
+    </div>
+{% endblock content %}
+

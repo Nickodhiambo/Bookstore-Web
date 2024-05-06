@@ -1,0 +1,48 @@
+.login-form, .reg-form{
+    display: flex;
+    justify-content: center;
+}
+
+.login-form form, .reg-form form{
+    width: 700px;
+    margin: 30px;
+    background: #e2e7fd;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.login-form form input, .reg-form form input{
+    margin: 10px;
+    width: 50%;
+    height: 30px;
+    border: 1px solid #000;
+    outline: none;
+    padding: 4px 8px;
+    color: #000;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.login-form form label, .reg-form form label{
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.login-form form button, .reg-form form button, .logout-form button{
+    background: #009000;
+    color: #fff;
+    font-weight: 18px;
+    border-radius: 4px;
+    padding: 4px 8px;
+    width: 30%;
+    margin: 30px 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.logout-header{
+    padding: 0 8px;
+    margin: 0 10px;
+}

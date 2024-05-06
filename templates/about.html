@@ -1,0 +1,33 @@
+{% extends '_base.html' %}
+
+{% load static %}
+
+{% block title %}About{% endblock title %}
+
+{% block content %}
+  <div class="about">
+    <p>
+      The Bookstore website caters to reading enthusiasts. We help you engage with an online community of readers.
+      You can check what other readers are saying about a book in the review section if you are looking for new reads. Additionally, you are welcome to suggest reads by uploading the cover of your favorite book and adding reviews to the books you've read.</p>
+    <p>You can also check a book's tentative price by clicking on an individual book. Note that the prices are in dollars
+and are based on the information provided by the community. Also note that you cannot purchase or download a book from
+the site. This app is purely for book suggestions and additional information about books.</p>
+    <p>Soon, we will integrate a messaging feature to allow users chat in real-time about books the've read and, really, just socialize about anything. Contact us if you have any new suggestions about how we can make the app more engaging.
+    In the meantime, keep reading!</p>
+    </p>
+  </div>
+  <div class="contacts">
+    <div class="phone">  
+      <span><img src="{% static 'images/call.svg' %}" alt="phone-icon"></span>
+      <span>0795 555 416</span>
+    </div>
+    <div class="mail">
+      <span><img src="{% static 'images/mail.svg' %}" alt=email-icon"></span>
+      <span>nodhiambo01@gmail.com</span>
+    </div>
+    <div class="social">
+      <a href=""><img class="twitter-icon" src="{% static 'images/x-twitter.svg' %}" alt="twitter-icon"></a>
+      <a href=""><img class="github-icon" src="{% static 'images/github.svg' %}" alt="github-icon"></a>
+    </div>
+  </div>
+{% endblock content %}

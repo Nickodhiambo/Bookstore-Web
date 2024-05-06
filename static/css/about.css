@@ -1,0 +1,29 @@
+.about{
+    margin: 0 50px;
+    font-size: 1.2rem;
+    line-height: 30px;
+    background: #483C32;
+    color: #fff;
+    padding: 7px 12px;
+}
+
+.social a img{
+    height: 30px;
+    width: 30px;
+}
+
+.contacts{
+    margin: 20px 50px;
+
+}
+
+.phone{
+    display: flex;
+    gap: 10px;
+}
+
+.mail{
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}

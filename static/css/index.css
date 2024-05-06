@@ -1,0 +1,25 @@
+.index-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 2rem;
+	font-weight: 700;
+	background: #D2B48C;
+	color: #fff;
+	height: 100vh;
+	background: {% url 'images/library.jpg' %};
+	background-size: cover;
+	position: relative;
+}
+
+.index-container::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #D2B48C;
+    opacity: 0.5;
+}
